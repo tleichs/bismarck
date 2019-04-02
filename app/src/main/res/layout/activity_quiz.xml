@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/txtscore02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="18dp"
+        android:text="Score: 0"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/txtquestionnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtscore02"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-56dp"
+        android:layout_marginStart="36dp"
+        android:text="Question 1/x"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/txtdifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtquestionnumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-56dp"
+        android:layout_marginStart="36dp"
+        android:text="Difficulty"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtscore02"
+        android:layout_marginEnd="29dp"
+        android:text="00:30"
+        android:freezesText="true"/>
+
+    <RadioGroup
+        android:id="@+id/RGbtn"
+        android:layout_width="215dp"
+        android:layout_height="172dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtscore02"
+        android:layout_marginTop="144dp">
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option1"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option2"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option3"
+            android:freezesText="true"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="96dp"
+        android:text="Question"
+        android:freezesText="true"/>
+
+    <Button
+        android:id="@+id/rbtnconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="126dp"
+        android:layout_toEndOf="@+id/txtquestionnumber"
+        android:text="Confirm"
+        android:freezesText="true"/>
+</RelativeLayout>
